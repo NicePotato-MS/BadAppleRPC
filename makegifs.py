@@ -26,7 +26,7 @@ def split_video_to_gifs(input_video, output_folder, gif_fps=30,clip_duration=5):
         frames = [frame for frame in subclip.iter_frames(fps=gif_fps)]
 
         # Save the frames as a GIF in the output folder
-        gif_filename = os.path.join(output_folder, f"{math.ceil(i/clip_duration)}.gif")
+        gif_filename = os.path.join(output_folder, f"c_{math.ceil(i/clip_duration)}.gif")
         imageio.mimsave(gif_filename, frames, fps=gif_fps)
 
     # Close the video clip

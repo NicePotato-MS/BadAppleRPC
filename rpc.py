@@ -14,7 +14,7 @@ while True:  # The presence will stay on as long as the program is running
         clip = 0
     print(RPC.update(state="Made by NicePotato",
                      details=f"Clip: {clip+1}/{total_clips}",
-                     large_image=f"https://raw.githubusercontent.com/NicePotato-MS/BadAppleRPC/main/clip/{clip}.gif"))
+                     large_image=f"https://raw.githubusercontent.com/NicePotato-MS/BadAppleRPC/main/clip/c_{clip}.gif"))
     clip=clip+1
     if clip == 14:
         time.sleep(8.28)
